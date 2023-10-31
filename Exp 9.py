@@ -10,7 +10,7 @@ from mlxtend.frequent_patterns import association_rules
 
 
 # Load the dataset from the Excel file
-df = pd.read_excel('Online_Retail.xlsx')
+df = pd.read_excel('Online Retail.xlsx')
 
 # Data Preprocessing
 # Drop rows with missing values in the 'InvoiceNo' and 'Description' columns
