@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Change Buttons</title>
+</head>
+
+<body>
+    <button class='js-red-btn'>RED</button>
+    <button class='js-green-btn'>GREEN</button>
+    <script>
+        const redButton = document.querySelector('.js-red-btn');
+        const greenButton = document.querySelector(`.js-green-btn`);
+
+        redButton.addEventListener('click', () => document.body.style = `background-color: red;`);
+        greenButton.addEventListener('click', () => document.body.style = `background-color: green;`);
+    </script>
+</body>
+
+</html>

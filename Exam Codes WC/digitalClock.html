@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Clock</title>
+    </head>
+    <body>
+        <h1></h1>
+        <script>
+            setInterval(() => document.querySelector('h1').innerHTML = new Date().toLocaleTimeString()
+            , 1000);
+        </script>
+    </body>
+</html>

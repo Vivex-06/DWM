@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timely BG 5 seconds</title>
+</head>
+<body>
+    <script>
+        let RGB_Values = [];
+
+        function setColorValues() {
+            for (let i = 0; i < 3; i++) {
+                RGB_Values[i] = Math.floor(Math.random() * 255) + 1;
+            }
+        }
+
+        setInterval(() => {
+            setColorValues();
+            document.body.style = `background-color: rgb(${RGB_Values[0]}, ${RGB_Values[1]}, ${RGB_Values[2]});`;
+        }, 5000);
+    </script>
+</body>
+
+</html>

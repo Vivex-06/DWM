@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color BG by Radio Button</title>
+</head>
+
+<body>
+    <form>
+        <input class="js-color-btn" type="radio" name="color" value="blue"><label>Blue</label><br>
+        <input class="js-color-btn" type="radio" name="color" value="red"><label>Red</label><br>
+        <input class="js-color-btn" type="radio" name="color" value="green"><label>Green</label><br>
+        <input class="js-color-btn" type="radio" name="color" value="yellow"><label>Yellow</label><br>
+    </form>
+    <script>
+        const btnList = document.querySelectorAll('.js-color-btn');
+        btnList.forEach((button) => {
+            button.addEventListener('click', () => {
+                document.body.style = `background-color: ${button.value}`;
+            })
+        })
+    </script>
+</body>
+
+</html>
